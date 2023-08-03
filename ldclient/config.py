@@ -259,7 +259,7 @@ class Config:
           :class:`HTTPConfig`.
         :param application: Optional properties for setting application metadata. See :py:attr:`~application`
         """
-        self.__sdk_key = sdk_key
+        self.__sdk_key = sdk_key.strip()
 
         self.__base_uri = base_uri.rstrip('/')
         self.__events_uri = events_uri.rstrip('/')
